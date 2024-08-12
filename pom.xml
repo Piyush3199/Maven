@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd ">
+	
+	 <!--  <build>
+	 	<sourceDirectory>src/nonstandard/java</sourceDirectory>
+	 	<directory>myTarget</directory>
+	 </build>-->
+	
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>Maven_examples</artifactId>
+	<groupId>com.infiniteskills.maven</groupId>
+	<version>1.0.0</version>
+	
+	<name>Learing Maven examples</name>
+	<description>This is a project used to demonstrate maven principles</description>
+	<url>https://github.com/Piyush-Kulkarni</url>
+	
+	<licenses>
+		<license>
+			<name>Apache License</name>
+			<comments>We are good at sharing</comments>
+		</license>
+	</licenses>
+	
+	<organization>
+		<name>Infinite Skills</name>
+		<url>https://www.infiniteskills-piyush.com</url>
+	</organization>
+	
+	<developers>
+		<developer>
+			<name>Piyush Kulkarni</name>
+			<email>piyushkulkarni3199@gmail.com</email>
+		</developer>
+	</developers>
+	<!-- Creates the inheritace with other POM files 
+	<parent>
+		
+	</parent>-->
+	<build>
+		<directory>c:\Users\PIYUSH\Desktop\Rasengan\Artifact Destination\development\</directory>
+	</build>
+	<!-- Maven Profiles :  dev/ qa/ prd etc -->
+	<profiles>
+	<!-- mvn -Pproduction package -->
+		<profile>
+			<id>production</id>
+			<!--  <activation>
+				<property>
+					<name>env.{env path}</name>
+					<value>PROD</value>
+				</property>
+			</activation>-->
+			<build>
+			<directory>c:\Users\PIYUSH\Desktop\Rasengan\Artifact Destination\production\</directory>
+			</build>
+		</profile>
+	</profiles>	
+	
+	
+	
+</project>
